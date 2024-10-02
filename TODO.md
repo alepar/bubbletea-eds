@@ -1,0 +1,9 @@
+- weights view: histogram + stddev
+- zonal filter
+- status bar:
+  - time
+  - region
+  - cp connected/discovered
+  - qps
+  - callers/targets
+  - cpu usage?
