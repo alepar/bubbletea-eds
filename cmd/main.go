@@ -11,6 +11,15 @@ import (
 )
 
 func main() {
+	// Model - has all the UI components, and nothing but the components
+	// the underlying state comes in through a channel as a custom msg
+	// the msg has all the computed info needed
+	// the top model then trickles it all down splitting it up as it goes
+
+	// how do I trickle it down?
+	// so all UI is inside boxer, so all the component models are just addressable by id
+	// so the state msg is just a map of address to state
+
 	// layout-tree definition
 	m := model{
 		tui:            boxer.Boxer{},
